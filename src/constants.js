@@ -1,6 +1,34 @@
 import { AppConfig } from 'blockstack'
 
 export const appConfig = new AppConfig(['store_write', 'publish_data'])
+
+export const RACES = [
+  {
+    id: 'dwarf',
+    name: 'Dwarf',
+    superpower: 'Has 9 lives.'
+  },
+  {
+    id: 'elf',
+    name: 'Elf',
+    superpower: 'Catching frisbees.'
+  },
+  {
+    id: 'tiefling',
+    name: 'Tiefling',
+    superpower: 'Catching frisbees.'
+  },
+  {
+    id: 'dragonborn',
+    name: 'Dragonborn',
+    superpower: 'Catching frisbees.'
+  },
+  {
+    id: 'human',
+    name: 'Human',
+    superpower: 'Roaring loudly.'
+  }] 
+
 export const ANIMALS = [
   {
     id: 'cat',
