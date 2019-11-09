@@ -14,6 +14,9 @@ class Kingdom extends Component {
     super(props)
     this.state = {
       ruler: {
+        race: {
+
+        },
         animal: {
 
         },
@@ -110,6 +113,7 @@ class Kingdom extends Component {
   render() {
     const mine = this.props.myKingdom
     const ruler = this.state.ruler
+    const rulerRace = ruler.race
     const rulerAnimal = ruler.animal
     const rulerTerritory = ruler.territory
     const username = this.state.rulerUsername
@@ -127,6 +131,12 @@ class Kingdom extends Component {
           >
           { rulerAnimal && rulerAnimal.name ?
             <img className="rounded-circle" src={`${app}/animals/${rulerAnimal.id}.jpg`} alt={rulerAnimal.name} />
+            :
+            <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+            alt="The Ruler" />
+          }
+          { rulerRace && rulerRace.name ?
+            <img className="rounded-circle" src={`${app}/races/${rulerRace.id}.jpg`} alt={rulerRace.name} />
             :
             <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
             alt="The Ruler" />
