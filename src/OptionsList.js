@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ANIMALS, TERRITORIES } from './constants'
+import { ANIMALS, TERRITORIES, RACES } from './constants'
 import './OptionsList.css'
 
 class OptionsList extends Component {
@@ -9,7 +9,11 @@ class OptionsList extends Component {
     let options = ANIMALS
     if (type === 'territories') {
       options = TERRITORIES
+    } else
+    if (type === 'races') {
+      options = RACES
     }
+    console.log(this.props)
     return (
       <div className="OptionsList container">
           <h2>Available { type } on this planet</h2>

@@ -6,8 +6,7 @@ export const RACES = [
   {
     id: 'dwarf',
     name: 'Dwarf',
-    superpower: 'Has 9 lives.',
-    desc: 'Short stocky bearded fellow'
+    superpower: 'Has 9 lives.'
   },
   {
     id: 'elf',

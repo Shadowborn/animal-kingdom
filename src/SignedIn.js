@@ -95,6 +95,14 @@ class SignedIn extends Component {
                 }
               />
               <Route
+                path='/races'
+                render={
+                  routeProps => <OptionsList
+                  type="races"
+                  {...routeProps} />
+                }
+              />
+              <Route
                 path='/territories'
                 render={
                   routeProps => <OptionsList

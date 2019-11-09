@@ -19,6 +19,9 @@ class NavBar extends Component {
       <Link className="nav-link" to="/animals">Animals</Link>
     </li>
     <li className="nav-item">
+      <Link className="nav-link" to="/races">Races</Link>
+    </li>
+    <li className="nav-item">
       <Link className="nav-link" to="/territories">Territories</Link>
     </li>
     <li className="nav-item">
