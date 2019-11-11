@@ -13,7 +13,6 @@ class OptionsList extends Component {
     if (type === 'races') {
       options = RACES
     }
-    console.log(this.props)
     return (
       <div className="OptionsList container">
           <h2>Available { type } on this planet</h2>
