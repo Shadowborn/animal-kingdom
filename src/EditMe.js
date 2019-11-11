@@ -4,6 +4,9 @@ import './EditMe.css'
 import Card from './Card'
 import { ANIMALS, RACES, TERRITORIES, ME_FILENAME } from './constants'
 
+
+import CharacterSheet from './components/abilities/CharacterSheet'
+
 class EditMe extends Component {
 
   constructor(props) {
@@ -72,7 +75,10 @@ class EditMe extends Component {
 
     return (
       <div className="EditMe container">
-      <h2>Your animal persona</h2>
+
+        
+<CharacterSheet props={this.props}/>
+      <h2>Your Character</h2>
       <p>You are the ruler of your kingdom! Pick your animal persona and its home!</p>
         <h3>Select your race</h3>
         <div className="row card-deck">
