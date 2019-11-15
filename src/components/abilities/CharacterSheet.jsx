@@ -12,7 +12,7 @@ class CharacterSheet extends Component{
     render(){
         return(
             <div>
-                Hello
+                Character Sheet component rendering
             </div>
         )
     }

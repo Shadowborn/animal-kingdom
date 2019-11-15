@@ -110,6 +110,7 @@ class Kingdom extends Component {
     })
   }
 
+
   render() {
     const mine = this.props.myKingdom
     const ruler = this.state.ruler
@@ -122,6 +123,7 @@ class Kingdom extends Component {
     const app = this.state.app
     const clickAdd = this.state.clickAdd
     const currentUsername = this.props.currentUsername
+
     return (
       <div className="Kingdom">
         <div className="row">
