@@ -1,5 +1,6 @@
 .EditMe .card-deck .card {
   cursor: pointer;
+  min-width: 25%;
 }
 
 .EditMe .card-deck .card:hover {
